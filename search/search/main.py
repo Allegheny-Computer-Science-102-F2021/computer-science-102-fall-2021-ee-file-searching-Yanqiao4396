@@ -1,4 +1,4 @@
-# TODO: add a module-level docstring to describe the purpose of this program
+#  add a module-level docstring to describe the purpose of this program
 
 from rich.console import Console
 
@@ -6,7 +6,7 @@ from pathlib import Path
 
 import typer
 
-cli = typer.Typer()# TODO: create a Typer object to support the command-line interface
+cli = typer.Typer()#  create a Typer object to support the command-line interface
 
 
 
@@ -26,7 +26,7 @@ def human_readable_boolean(answer: bool) -> str:
     if answer:
         return "Yes"
     return "No"
-    # TODO: determine if the boolean value is True or False
+    #  determine if the boolean value is True or False
     # if it is True, then return "Yes"
     # if it is False, then return "No"
 
@@ -39,7 +39,7 @@ def word_search(text: str, word: str) -> bool:
             if _ == word:
                 return True
     return False 
-    # TODO: perform a case-sensitive search for the word in the provided text
+    #  perform a case-sensitive search for the word in the provided text
 
 
 @cli.command()
@@ -62,9 +62,9 @@ def word(
     else:
 
         print(f"Was the word '{word}'found in the file input/proactive.txt? {human_readable_boolean(word_search(file_fully_qualified,word))}")
-    # TODO: display a message to explain the file that will be input
-    # TODO: confirm the file is valid and so the program should search through it for the word
-    # --> TODO: read in the contents of the file
-    # --> TODO: search for the word in the contents of the file by calling function
-    # --> TODO: display a message about whether the word was or was not found
-    # TODO: since the file was not valid and thus you cannot install it display a message
+    #  display a message to explain the file that will be input
+    #  confirm the file is valid and so the program should search through it for the word
+    # -->  read in the contents of the file
+    # -->  search for the word in the contents of the file by calling function
+    # -->  display a message about whether the word was or was not found
+    #  since the file was not valid and thus you cannot install it display a message
