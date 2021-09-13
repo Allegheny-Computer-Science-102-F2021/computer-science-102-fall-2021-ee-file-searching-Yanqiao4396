@@ -58,10 +58,10 @@ def word(
     print("Searching through the file called input/notfound.txt!")
     # We can get the input by using code above which connects the input as a file with my program
     if confirm_valid_file(file_fully_qualified) is False:
-        print("input/notfound.txt was not a valid file")
+        print(f"{file_fully_qualified} was not a valid file")
     else:
 
-        print(f"Was the word '{word}'found in the file input/proactive.txt? {human_readable_boolean(word_search(file_fully_qualified,word))}")
+        print(f"Was the word '{word}'found in the file {file_fully_qualified}? {human_readable_boolean(word_search(file_fully_qualified,word))}")
     #  display a message to explain the file that will be input
     #  confirm the file is valid and so the program should search through it for the word
     # -->  read in the contents of the file
