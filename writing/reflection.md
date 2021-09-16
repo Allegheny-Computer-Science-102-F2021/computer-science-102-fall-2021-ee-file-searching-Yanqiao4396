@@ -1,19 +1,19 @@
 # File Searching
 
-Yanqiao Chen
+#Yanqiao Chen
 
 ## Program Output
 
 ### What is the output from running the following commands?
 
-TODO: Use a fenced code block to provide the output for this command.
+: Use a fenced code block to provide the output for this command.
 
 - `poetry run search --word ethical --dir input --file file.txt`
 ```
 😀 Searching through the file called input/file.txt!
 input/file.txt was not a valid file
 ```
-TODO: Use a fenced code block to provide the output for this command.
+: Use a fenced code block to provide the output for this command.
 
 - `poetry run search --word ethical --dir input --file proactive.txt`
 ```
@@ -38,8 +38,8 @@ def word_search(text: str, word: str) -> bool:
 ```
 First, the terminal checks if file exists, regardless of if file is "file". Only if the outcome is true, go to the next the step where the terminal checks whether file behaves as the type of file. If file can meet these two conditions, then return True, otherwise return False.
 
-TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+: Use a fenced code block to provide the requested source code
+: Write at least one paragraph to explain the request source code
 
 #### A function that produces a human readable response for a boolean value
 ```
@@ -49,8 +49,8 @@ def human_readable_boolean(answer: bool) -> str:
         return "Yes"
     return "No"
 ```
-TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+: Use a fenced code block to provide the requested source code
+: Write at least one paragraph to explain the request source code
 Just use a if statement to achieve this requirement and return yes or no.
 #### A function that performs a case-sensitive search for a word in a file
 ```
@@ -64,40 +64,40 @@ def word_search(text: str, word: str) -> bool:
     return False
 ```
 I open this file by use open("r") and read it. At the same time, I splite the file so that each line can be a seperate block. Then what we should do is split lines into smaller blocks and use == operator to check if there is a value equal to the string we want. If not return False, otherwise return True.
-TODO: Use a fenced code block to provide the requested source code
-TODO: Write at least one paragraph to explain the request source code
+: Use a fenced code block to provide the requested source code
+: Write at least one paragraph to explain the request source code
 
 ### What is the purpose of the `pyproject.toml` file?
 pyproject.toml is the specified file format of which contains the build system requirements of Python projects.
-TODO: Provide a one-paragraph response that answers this question in your own words.
-TODO: You may leverage your answer from the S.O.S Checkpoint assignment!
+: Provide a one-paragraph response that answers this question in your own words.
+: You may leverage your answer from the S.O.S Checkpoint assignment!
 
 ### What is the purpose of the `poetry.lock` file?
 cIf you have never run the command before and there is also no poetry.lock file present, Poetry simply resolves all dependencies listed in your pyproject.toml file and downloads the latest version of their files.
 When Poetry has finished installing, it writes all of the packages and the exact versions of them that it downloaded to the poetry.lock file, locking the project to those specific versions. You should commit the poetry.lock file to your project repo so that all people working on the project are locked to the same versions of dependencies (more below).
-TODO: Provide a one-paragraph response that answers this question in your own words.
-TODO: You may leverage your answer from the S.O.S Checkpoint assignment!
+: Provide a one-paragraph response that answers this question in your own words.
+: You may leverage your answer from the S.O.S Checkpoint assignment!
 
 ### What are three different ways in which you can run the `search` program?
 Sorry the only way I know is to use poetry run. I know docker may make sense as well, but I don't know how to do with it.
 
-TODO: Describe the first way for running the program, giving a command and a paragraph
+: Describe the first way for running the program, giving a command and a paragraph
 
-- TODO: provide a command
+- : provide a command
 
-TODO: Describe the second way for running the program, giving a command and a paragraph
+: Describe the second way for running the program, giving a command and a paragraph
 
-- TODO: provide a command
+- : provide a command
 
-TODO: Describe the third way for running the program, giving a command and a paragraph
+: Describe the third way for running the program, giving a command and a paragraph
 
-- TODO: provide a command
+- : provide a command
 
 ### What was the greatest challenge that you faced when completing this assignment?
 The greatest challenge must be to find a good approach to read the file and split it.
 
-TODO: Provide a one-paragraph response that answers this question in your own words.
+: Provide a one-paragraph response that answers this question in your own words.
 
 ### Based on your experiences with this project, what is one way in which you want to improve?
 I want to improve my understanding of docker
-TODO: Provide a one-paragraph response that answers this question in your own words.
+: Provide a one-paragraph response that answers this question in your own words.
