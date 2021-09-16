@@ -1,5 +1,5 @@
 #  add a module-level docstring to describe the purpose of this program
-"""The program is for checking if a word exists in a certain file"""
+"""The program is for checking if a word exists in a certain file."""
 from rich.console import Console
 
 from pathlib import Path
