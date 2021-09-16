@@ -73,5 +73,3 @@ def word(
     # -->  search for the word in the contents of the file by calling function
     # -->  display a message about whether the word was or was not found
     #  since the file was not valid and thus you cannot install it display a message
-
-    
