@@ -99,5 +99,5 @@ The greatest challenge must be to find a good approach to read the file and spli
 : Provide a one-paragraph response that answers this question in your own words.
 
 ### Based on your experiences with this project, what is one way in which you want to improve?
-I want to improve my understanding of docker and poetry.
+I want to improve my understanding of docker container and poetry.
 : Provide a one-paragraph response that answers this question in your own words.
