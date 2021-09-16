@@ -1,5 +1,5 @@
 #  add a module-level docstring to describe the purpose of this program
-
+"""The program is for checking if a word exists in a certain file"""
 from rich.console import Console
 
 from pathlib import Path
@@ -73,3 +73,5 @@ def word(
     # -->  search for the word in the contents of the file by calling function
     # -->  display a message about whether the word was or was not found
     #  since the file was not valid and thus you cannot install it display a message
+
+    
