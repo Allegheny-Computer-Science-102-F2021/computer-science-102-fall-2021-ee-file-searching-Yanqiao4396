@@ -6,8 +6,8 @@ from pathlib import Path
 
 import typer
 
-cli = typer.Typer()#  create a Typer object to support the command-line interface
-
+cli = typer.Typer()
+#  create a Typer object to support the command-line interface
 
 
 def confirm_valid_file(file: Path) -> bool:
@@ -33,12 +33,12 @@ def human_readable_boolean(answer: bool) -> str:
 
 def word_search(text: str, word: str) -> bool:
     """Determine whether or not a word is found in the text in case-sensitive fashion."""
-    files = open(text,"r").read().splitlines()
+    files = open(text, "r").read()
     for line in files:
         for _ in line.split():
             if _ == word:
                 return True
-    return False 
+    return False
     #  perform a case-sensitive search for the word in the provided text
 
 
@@ -55,13 +55,18 @@ def word(
     console.print()
     # create the full name of the file
     file_fully_qualified = dir / file
-    print("Searching through the file called input/notfound.txt!")
+    print(
+        "\N{Grinning Face}",
+        f"Searching through the file called {file_fully_qualified}!",
+    )
     # We can get the input by using code above which connects the input as a file with my program
     if confirm_valid_file(file_fully_qualified) is False:
         print(f"{file_fully_qualified} was not a valid file")
     else:
 
-        print(f"Was the word '{word}'found in the file {file_fully_qualified}? {human_readable_boolean(word_search(file_fully_qualified,word))}")
+        print(
+            f"Was the word '{word}'found in the file {file_fully_qualified}? {human_readable_boolean(word_search(file_fully_qualified,word))}"
+        )
     #  display a message to explain the file that will be input
     #  confirm the file is valid and so the program should search through it for the word
     # -->  read in the contents of the file
